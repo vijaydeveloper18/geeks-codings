@@ -1,0 +1,33 @@
+$(document).ready(function(){
+    $('#btn1').click(function(){
+        $('.content1').fadeIn(2000);
+       $('.content1').css({"transition":"0.5","transform":"translateX(-40px)",
+       "animationduration":"0.5","ease-in-out":"50s"})
+       $('.content2').hide();
+       $('.content3').hide();
+    });
+    $('#btn2').click(function(){
+      $('.content2').fadeIn(2000);
+      $('.content2').css({
+        "transition":"0.5","transform":"translateX(-40px)",
+        "animationduration":"0.5","ease-in-out":"50s"
+      })
+      $('.content1').hide();
+      $('.content3').hide();
+    });
+    $('#btn3').click(function(){
+       $('.content3').fadeIn(2000);
+       $('.content3').css({
+        "transition":"0.5","transform":"translateX(-40px)",
+        "animationduration":"0.5","ease-in-out":"50s"
+       })
+       $('.content1').hide();
+       $('.content2').hide();
+    });
+});
+
+$(document).ready(function(){
+  $('#icon').click(function(){
+     $('.hold').toggle(250);
+  });
+});
